@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    width: 65vmin;
+    height: 70vmin;
+    background: #293447;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #E3f2FD;
+    flex-direction: column;
+   
+}
+
+.title{
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+
+
+.game-detail{
+color: white;
+font-size: 1.2rem;
+font-weight: 500;
+padding: 20px 27px;
+display: flex;
+justify-content: space-between;
+}
+
+.play-bord{
+    height: 100%;
+    width: 100%;
+    background: #212837;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.play-bord .food{
+    background: #FF003D;
+}
+
+.play-bord .head{
+    background:green
+}
+
+.controlars{
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 4rem;
+    width: 18vw;
+    height: 15vh; 
+    display: none;
+}
+
+#up{
+    background: rgb(0, 0, 0);
+
+    position: absolute;
+    top: 0;
+    left: 40%;
+}
+
+#rigth{
+    background: rgb(0, 0, 0);
+    position: absolute;
+    right: 0;
+    top: 40%;
+
+
+}
+
+#left{
+    background: rgb(0, 0, 0);
+
+    position: absolute;
+    left: 0;
+    top: 40%;
+
+}
+
+#down{
+    background: rgb(0, 0, 0);
+
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+
+
+}
+
+.controlars i{
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    background: red;    
+    color: white;
+    padding: 2rem;
+    width: calc(100%/4);
+    font-size: 1.5rem;
+
+
+}
+
+
+
+@media screen and (max-width:800px){
+    .wrapper{
+        width: 90vmin;
+        height: 115vmin;
+
+    }
+
+    .title{
+        font-size: 15px;
+    }
+
+    .game-detail{
+        font-size: 1rem;
+        padding: 15px 27px;
+
+    }
+
+    .controlars{
+        display: flex;
+
+    }
+
+    .controlars i{
+        padding: 15px 0;
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .title{
+        font-size: 12px;
+    }
+}
