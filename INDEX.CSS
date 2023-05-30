@@ -29,6 +29,13 @@ body{
 .title{
     margin-bottom: 2rem;
     font-size: 20px;
+    
+}
+
+.title h3{
+    align-items: center;
+    margin-right: 1rem;
+    font-size: 20px;
 }
 
 
@@ -49,9 +56,9 @@ justify-content: space-between;
     grid-template: repeat(30, 1fr) / repeat(30, 1fr);
 }
 
-.play-bord .food{
+/* .play-bord .food{
     background: #FF003D;
-}
+} */
 
 .play-bord .head{
     background:green
@@ -127,6 +134,11 @@ justify-content: space-between;
 
     .title{
         font-size: 15px;
+    }
+
+    .title h3{
+        font-size: 15px;
+
     }
 
     .game-detail{

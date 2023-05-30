@@ -68,7 +68,7 @@ const initGame = () =>{
 
 
 if(gameOver) return handleGameOver();
-    let htmlMarkup = `<div class = "food" style="grid-area : ${foodY} / ${foodX}"></div>`;
+    let htmlMarkup = `<div class = "food" style="grid-area : ${foodY} / ${foodX}">🍒</div>`;
 
    if(snakeX === foodX && snakeY === foodY){
     changeFoodPosition();
