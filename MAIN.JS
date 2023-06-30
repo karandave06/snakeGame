@@ -2,6 +2,7 @@ const playBord = document.querySelector(".play-bord")
 const scoreElement = document.querySelector(".score")
 const highScoreElement = document.querySelector(".high-score")
 const controlar = document.querySelectorAll(".controlars i")
+const pose = document.querySelectorAll(".pause")
 let foodX, foodY;
 let snakeX = 5,snakeY = 10;
 let velocityX = 0, velocityY = 0;
@@ -15,7 +16,12 @@ let score = 0;
 let highScore = localStorage.getItem("high-score") || 0;
 highScoreElement.innerText = `High Score: ${highScore}`
 
+function stop(){
+    alert("stopp")
+}
 
+ 
+ 
 
 const changeFoodPosition = () =>{
     foodX = Math.floor(Math.random() *30) +1;
@@ -47,6 +53,10 @@ else if(e.key === "ArrowRight" && velocityX !=-1){
     velocityY = 0;
 }
 
+else if(e.key === " "){
+    alert("stop")
+}
+
 }
 
 
@@ -68,7 +78,7 @@ const initGame = () =>{
 
 
 if(gameOver) return handleGameOver();
-    let htmlMarkup = `<div class = "food" style="grid-area : ${foodY} / ${foodX}">🍒</div>`;
+    let htmlMarkup = `<div class = "food" style="grid-area : ${foodY} / ${foodX}"></div>`;
 
    if(snakeX === foodX && snakeY === foodY){
     changeFoodPosition();

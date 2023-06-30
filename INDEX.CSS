@@ -56,9 +56,9 @@ justify-content: space-between;
     grid-template: repeat(30, 1fr) / repeat(30, 1fr);
 }
 
-/* .play-bord .food{
+.play-bord .food{
     background: #FF003D;
-} */
+}
 
 .play-bord .head{
     background:green
@@ -123,6 +123,20 @@ justify-content: space-between;
 
 }
 
+
+.pause{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 3rem;
+}
+
+
+.pause button{
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+}
 
 
 @media screen and (max-width:800px){
